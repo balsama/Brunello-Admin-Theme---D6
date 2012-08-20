@@ -971,31 +971,3 @@ form#views-ui-preview-form input#preview-submit {
 .content-add-more {
   margin-bottom: 10px;
 }
-
-
-/* Microsite specific */
-#node-form #group-sites-items table#group_sites_values tbody tr {
-  border-top: 4px dashed #666;
-}
-#node-form #group-sites-items table#group_sites_values tbody tr.odd {
-  background-color: #f3f4ee;
-}
-#node-form #group-sites-items table#group_sites_values tbody tr.odd:hover {
-  background-color: #f3f8db;
-}
-#node-form #group-sites-items table#group_sites_values tr td > div.group-sites-field-site-name input{
-  background-color: #ebff88;
-  border: 2px solid #000;
-  color: #000;
-  font-size: 40px;
-  font-weight: bold;
-  width: 800px;
-}
-
-/* Hide redirect stuff unless theverify incoming link checkbox is checked */
-.group-sites-field-return-url,
-.group-sites-field-invalid-referrer-text,
-.group-sites-field-override-param,
-.group-sites-field-shared-salt {
-  display: none;
-}
