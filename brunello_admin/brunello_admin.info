@@ -1,0 +1,22 @@
+
+name = brunello_admin
+description = A simple one-column, tableless, fluid width administration theme.
+core = 6.x
+engine = phptemplate
+
+stylesheets[all][] = reset.css
+stylesheets[all][] = style.css
+stylesheets[all][] = vertical_tabs.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = scripts/default/style.css
+
+scripts[] = scripts/jquery.markitup.js
+scripts[] = scripts/default/set.js
+scripts[] = scripts/custom.js
+
+regions[content] = Content
+regions[sidebar] = Sidebar
+
+version = "6.x-1.0"
+core = "6.x"
+project = "brunello_admin"
