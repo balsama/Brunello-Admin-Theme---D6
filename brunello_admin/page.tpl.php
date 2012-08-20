@@ -74,6 +74,7 @@
   <?php print $closure; ?>
   <script type="text/javascript" >
   $(document).ready(function() {
+    //Add IDs of text areas for rich text editor
     $("#edit-field-copy-0-value").markItUp(mySettings);
   });
   </script>
