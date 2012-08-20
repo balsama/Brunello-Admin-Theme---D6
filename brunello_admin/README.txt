@@ -1,7 +1,10 @@
+This theme is a backport of the Drupal 7 admin theme (designed by Mark and Leisa) with some customizations.
 
-This theme is just a backport of the Drupal 7 admin theme (designed by Mark and Leisa).
+There are quite a few areas that could be improved. Please send pull requests if you have made any changes 
+that should be incorporated.
 
-The only changes are small API changes between Drupal 6 and 7 for compatibility.
-
-Please post any issues to the issue queue at http://drupal.org/project/issues/seven
-
+Incomplete list of customizations:
+* Added custom (blank) stylesheet
+* Added custom (blank) JS file
+* Added hover state for table rows
+* Added function to add unique classes per field to multigroup node forms
