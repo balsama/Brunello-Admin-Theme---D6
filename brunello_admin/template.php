@@ -112,8 +112,13 @@ function brunello_admin_fieldset($element) {
 
 /**
  * Theme override for theme_content_multigroup_node_form().
- *
  * Add class wrappers.
+ *
+ * Incrdibly useful function for admin themes, this adds unique classes per field to
+ * wrapper divs in multigroup. Note that this does not work with AHAH, so be aware
+ * that the new classes won't be added immediately when you press "Add More Values".
+ *
+ * See: http://drupal.org/node/832340#comment-3572596 for more info.
  */
 function brunello_admin_content_multigroup_node_form($element) {
   $groups = array(
