@@ -9,6 +9,7 @@ stylesheets[all][] = style.css
 stylesheets[all][] = vertical_tabs.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = scripts/default/style.css
+stylesheets[all][] = custom.css
 
 scripts[] = scripts/jquery.markitup.js
 scripts[] = scripts/default/set.js
