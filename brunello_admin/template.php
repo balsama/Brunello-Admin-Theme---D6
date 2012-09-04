@@ -122,7 +122,7 @@ function brunello_admin_fieldset($element) {
  */
 function brunello_admin_content_multigroup_node_form($element) {
   $groups = array(
-    'group_sites',
+    'group_EXAMPLE',
    // Add your group names here...
   );
 
