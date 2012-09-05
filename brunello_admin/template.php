@@ -8,21 +8,21 @@ function brunello_admin_preprocess_page(&$vars) {
   $vars['secondary_local_tasks'] = menu_secondary_local_tasks();
   
   // Additional classes for body element.
-  $additional_body_classes = array();
+  $body_classes = array($vars['body_classes']);
   //Add the user roles to the body class
   global $user;
   if ($user) {
     foreach ($user->roles as $role) {
-      $additional_body_classes[] = 'role-' . strtolower(str_replace(' ', '-', $role));
+      $body_classes[] = 'role-' . strtolower(str_replace(' ', '-', $role));
     }
     //And the user ID
-    $additional_body_classes[] = 'user-' . $user->uid;
+    $body_classes[] = 'user-' . $user->uid;
     //And a special class for the first user1 account
     if ($user->uid == 1) {
-      $additional_body_classes[] = 'user1-account';
+      $body_classes[] = 'user1-account';
     }
   }
-  $vars['additional_body_classes'] = implode(' ', $additional_body_classes);
+  $vars['body_classes'] = implode(' ', $body_classes);
 }
 
 /**

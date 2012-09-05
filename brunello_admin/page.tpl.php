@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="<?php print $body_classes . ' ' . $additional_body_classes; ?>">
+<body class="<?php print $body_classes; ?>">
 
   <div id="skip-link">
     <a href="#main-content"><?php print t('Skip to main content'); ?></a>
