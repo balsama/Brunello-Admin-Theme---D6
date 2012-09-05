@@ -8,3 +8,4 @@ Incomplete list of customizations:
 * Added custom (blank) JS file
 * Added hover state for table rows
 * Added function to add unique classes per field to multigroup node forms
+* Added function to generate additional body classes for logged in users (role, uid, etc)
