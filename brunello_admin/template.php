@@ -6,6 +6,23 @@
 function brunello_admin_preprocess_page(&$vars) {
   $vars['primary_local_tasks'] = menu_primary_local_tasks();
   $vars['secondary_local_tasks'] = menu_secondary_local_tasks();
+  
+  // Additional classes for body element.
+  $additional_body_classes = array();
+  //Add the user roles to the body class
+  global $user;
+  if ($user) {
+    foreach ($user->roles as $role) {
+      $additional_body_classes[] = 'role-' . strtolower(str_replace(' ', '-', $role));
+    }
+    //And the user ID
+    $additional_body_classes[] = 'user-' . $user->uid;
+    //And a special class for the first user1 account
+    if ($user->uid == 1) {
+      $additional_body_classes[] = 'user1-account';
+    }
+  }
+  $vars['additional_body_classes'] = implode(' ', $additional_body_classes);
 }
 
 /**
